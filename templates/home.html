@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %} მთავარი - To-Do with Flask {% endblock %}
+
+{% block content %}
+<div class="to-do-list">
+    <h1>ჩემი დავალებების სია</h1>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            {% if task[2] == 1 %}
+            <i class="fa-solid fa-check"></i> <s>{{ task[1] }}</s>
+            {% else %}
+            <i class="fa-solid fa-xmark"></i> {{ task[1] }}
+            <a href="/done/{{ task[0] }}" style="background-color: green; margin-left: 10px;"><i class="fa-solid fa-check"></i> დასრულება</a>
+            {% endif %}
+            <a href="/delete/{{ task[0] }}" style="background-color: red; margin-left: 10px;"><i class="fa-solid fa-trash-can"></i> წაშლა</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

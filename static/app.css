@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MarkGEOCAPS', sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #dadada;
+}
+
+
+.container {
+    position: relative;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 60%;
+    height: auto;
+    background-color: #f4f4f4;
+}
+
+
+/* ========== / HEADER CSS | JOJUA.NET / ========== */
+header.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+    max-width: 60%;
+    height: 80px;
+    line-height: 80px;
+    padding: 0px 12px;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+header.header>.logo-header {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+
+header.header>nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header.header>nav>ul>li>a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+/* ========== / TO-DO LIST CSS | JOJUA.NET / ========== */
+.to-do-list {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px 15px 15px;
+}
+
+.to-do-list>h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.to-do-list>ul {
+    list-style-type: decimal;
+    list-style-position: inside;
+    background-color: #ffffff;
+    border: 1px solid rgba(95, 95, 95, 0.5);
+}
+
+
+.to-do-list>ul>li {
+    padding: 10px;
+    border: 1px solid rgba(95, 95, 95, 0.5);
+}
+
+.to-do-list>ul>li>a {
+    padding: 3px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    float: right;
+}
+
+.to-do-list>form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.to-do-list>form>input {
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(95, 95, 95, 0.5);
+    outline: none;
+}
+
+.to-do-list>form>input:focus {
+    border-color: blue;
+}
+
+.to-do-list>form>button {
+    width: fit-content;
+    padding: 10px 14px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ========== / FONTS CSS | JOJUA.NET / ========== */
+@font-face {
+    font-family: 'MarkGEO';
+    src: url('./fonts/MarkGEO-Bold.eot');
+    src: url('./fonts/MarkGEO-Bold.woff2') format('woff2'), url('./fonts/MarkGEO-Bold.woff') format('woff'), url('./fonts/MarkGEO-Bold.ttf') format('truetype'), url('./fonts/MarkGEO-Bold.svg#MarkGEO-Bold') format('svg'), url('./fonts/MarkGEO-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MarkGEO';
+    src: url('./fonts/MarkGEO-Medium.eot');
+    src: url('./fonts/MarkGEO-Medium.woff2') format('woff2'), url('./fonts/MarkGEO-Medium.woff') format('woff'), url('./fonts/MarkGEO-Medium.ttf') format('truetype'), url('./fonts/MarkGEO-Medium.svg#MarkGEO-Medium') format('svg'), url('./fonts/MarkGEO-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MarkGEOCAPS';
+    src: url('./fonts/MarkGEOCAPS-Bold.eot');
+    src: url('./fonts/MarkGEOCAPS-Bold.woff2') format('woff2'), url('./fonts/MarkGEOCAPS-Bold.woff') format('woff'), url('./fonts/MarkGEOCAPS-Bold.ttf') format('truetype'), url('./fonts/MarkGEOCAPS-Bold.svg#MarkGEOCAPS-Bold') format('svg'), url('./fonts/MarkGEOCAPS-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MarkGEOCAPS';
+    src: url('./fonts/MarkGEOCAPS-Medium.eot');
+    src: url('./fonts/MarkGEOCAPS-Medium.woff2') format('woff2'), url('./fonts/MarkGEOCAPS-Medium.woff') format('woff'), url('./fonts/MarkGEOCAPS-Medium.ttf') format('truetype'), url('./fonts/MarkGEOCAPS-Medium.svg#MarkGEOCAPS-Medium') format('svg'), url('./fonts/MarkGEOCAPS-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+button,
+label,
+.btn {
+    font-family: "MarkGEOCAPS", sans-serif;
+    font-weight: bold;
+}
+
+p,
+input {
+    font-family: 'MarkGEO', sans-serif;
+    font-weight: normal;
+}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}დავალების დამატება - To-Do with Flask{% endblock %}
+
+{% block content %}
+<div class="to-do-list">
+    <h1>დავალების დამატება</h1>
+    <form method="POST">
+        <input type="text" name="task" placeholder="შეიყვანე დავალება..." required>
+        <button type="submit">დამატება</button>
+    </form>
+</div>
+{% endblock %}
